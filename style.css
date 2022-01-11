@@ -1,0 +1,129 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora-box{
+    height: 75vh;
+    width: 30vw;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "visor"
+        "teclado";
+}
+.calculadora-visor{
+    grid-area: visor;
+    background-color: #7FBEEB;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    width: 95%;
+    height: 90%;
+}
+.calculadora-teclado{
+    grid-area: teclado;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "zerar none porcentagem del"
+        "sete oito nove dividir"
+        "quatro cinco seis multiplicacao"
+        "um dois tres subtracao"
+        "zeroo ponto igual soma";
+    column-gap: 7px;
+    row-gap: 7px;
+}
+.zerar{
+    grid-area: zerar;
+}
+.porcentagem{
+    grid-area: porcentagem;
+}
+.deletar{
+    grid-area: del;
+    text-transform: uppercase;
+}
+.sete:active{
+    background-color: #354F52;
+}
+.botao-7{
+    border: none;
+    grid-area: sete;
+}
+.oito{
+    grid-area: oito;
+}
+.nove{
+    grid-area: nove;
+}
+.dividir{
+    grid-area: dividir;
+}
+.quatro{
+    grid-area: quatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+.seis{
+    grid-area: seis;
+}
+.multiplicacao{
+    grid-area: multiplicacao;
+}
+.um{
+    grid-area: um;
+}
+.dois{
+    grid-area:dois;
+}
+.tres{
+    grid-area: tres;
+}
+.subtracao{
+    grid-area: subtracao;
+}
+.zero{
+    grid-area: zeroo;
+}
+.ponto{
+    grid-area: ponto;
+}
+.igual{
+    grid-area: igual;
+}
+.soma{
+    grid-area: soma;
+}
+.formatacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+    width: 100;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #2F3E46;
+}
+.formatacao-operadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    height: 100%;
+    width: 100;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #EAC5D8;
+}
