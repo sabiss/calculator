@@ -1,0 +1,2 @@
+<h1>Calculadora</h1>
+<p>I'm starting to integrate my knowledge in Javascript for the web. This is my first Front-End project introducing this language. I chose to do a calculated one because it is a simple project to test new knowledge</p>
