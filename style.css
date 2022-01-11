@@ -127,3 +127,57 @@ main{
     font-size: 1.5rem;
     background-color: #EAC5D8;
 }
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .calculadora-box{
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .calculadora-box{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1249px){
+    .calculadora-box{
+        width: 50vw;
+    }
+    .formatacao{
+        font-size: 2.2rem;
+    }
+    .formatacao-operadores{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (min-width:1250px) and (max-width: 2030px){
+    .calculadora-box{
+        width:54vw;
+    }
+    .formatacao{
+        font-size: 2.2rem;
+    }
+    .formatacao-operadores{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (min-width:2031px) and (max-width: 2170px){
+    .calculadora-box{
+        width:50vw;
+    }
+    .formatacao{
+        font-size: 2.2rem;
+    }
+    .formatacao-operadores{
+        font-size: 2.7rem;
+    }
+}
+@media only screen and (min-width:2171px){
+    .calculadora-box{
+        width:50vw;
+    }
+    .formatacao{
+        font-size: 2.5rem;
+    }
+    .formatacao-operadores{
+        font-size: 2.7rem;
+    }
+}
