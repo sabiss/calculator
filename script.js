@@ -1,0 +1,1 @@
+window.alert('Página ainda em construção! JavaScript ainda não inserido')
