@@ -22,9 +22,19 @@ main{
     display: flex;
     justify-self: center;
     align-self: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     width: 95%;
     height: 90%;
+}
+#numero{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    width: 90%;
+    height: 60%;
+    text-align: center;
 }
 .calculadora-teclado{
     grid-area: teclado;
@@ -51,13 +61,11 @@ main{
     grid-area: del;
     text-transform: uppercase;
 }
-.sete:active{
-    background-color: #354F52;
-}
-.botao-7{
+.sete{
     border: none;
     grid-area: sete;
 }
+
 .oito{
     grid-area: oito;
 }
@@ -115,6 +123,9 @@ main{
     font-size: 1.5rem;
     background-color: #2F3E46;
 }
+.formatacao:active{
+    background-color: #526169;
+}
 .formatacao-operadores{
     display: flex;
     justify-content: center;
@@ -126,6 +137,9 @@ main{
     border-radius: 10px;
     font-size: 1.5rem;
     background-color: #EAC5D8;
+}
+.formatacao-operadores:active{
+    background-color: #e9b3cf;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .calculadora-box{
