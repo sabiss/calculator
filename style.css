@@ -27,6 +27,9 @@ main{
     border-radius: 10px;
     width: 95%;
     height: 90%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
 #numero{
     background-color: transparent;
