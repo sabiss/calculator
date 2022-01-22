@@ -24,7 +24,7 @@ numero_nove.addEventListener("click", nove)
 var numero = null
 var visor = document.querySelector("div.calculadora-visor")
 
-function verificar(digito, numero){
+function verificar(digito, numero){//verificar se já tem um algoritmo em NUMERO para concatenar ou não
     if(numero == null){
         numero = digito
     }
@@ -35,53 +35,63 @@ function verificar(digito, numero){
 }
 
 function zero(){
-    var mostrar_visor = verificar("0", numero)
+    let mostrar_visor = verificar("0", numero)
+    numero = mostrar_visor
     visor.innerHTML = mostrar_visor
     console.log(mostrar_visor)
 }
 function um(){
     let mostrar_visor = verificar("1", numero)
+    numero = mostrar_visor
     visor.innerHTML = mostrar_visor
-    console.log(numero)
+    console.log(mostrar_visor)
 }
 function dois(){
-    numero = "2"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("2", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function tres(){
-    numero = "3"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("3", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function quatro(){
-    numero = "4"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("4", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function cinco(){
-    numero = "5"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("5", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function seis(){
-    numero = "6"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("6", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function sete(){
-    numero = "7"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("7", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function oito(){
-    numero = "8"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("8", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 function nove(){
-    numero = "9"
-    visor.innerHTML = numero
-    console.log(numero)
+    let mostrar_visor = verificar("9", numero)
+    numero = mostrar_visor
+    visor.innerHTML = mostrar_visor
+    console.log(mostrar_visor)
 }
 console.log("oi")
