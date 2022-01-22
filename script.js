@@ -1,4 +1,4 @@
-window.alert('Página ainda em construção! JavaScript ainda não inserido')
+window.alert('Página ainda em construção! JavaScript ainda não inserido totalmente')
 var numero_zero = document.querySelector("div.zero")
 var numero_um = document.querySelector("div.um")
 var numero_dois = document.querySelector("div.dois")
