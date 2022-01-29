@@ -19,17 +19,30 @@ main{
 .calculadora-visor{
     grid-area: visor;
     background-color: #7FBEEB;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas: 
+        "visor-superior"
+        "visor-inferior";
+    margin: auto;
     border-radius: 10px;
     width: 95%;
     height: 90%;
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+.visor-superior{
+    grid-area: visor-superior;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.visor-inferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: visor-inferior;
 }
 #numero{
     background-color: transparent;
