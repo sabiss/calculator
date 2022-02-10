@@ -138,9 +138,13 @@ main{
     border-radius: 10px;
     font-size: 1.5rem;
     background-color: #2F3E46;
+    
 }
 .formatacao:active{
     background-color: #526169;
+}
+.formatacao:hover{
+    cursor: pointer;
 }
 .formatacao-operadores{
     display: flex;
@@ -156,6 +160,9 @@ main{
 }
 .formatacao-operadores:active{
     background-color: #e9b3cf;
+}
+.formatacao-operadores:hover{
+    cursor: pointer;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .calculadora-box{
