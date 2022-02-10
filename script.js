@@ -1,7 +1,7 @@
-window.alert('Página ainda em construção! JavaScript ainda não inserido totalmente')
-
 const visor_inferior = document.querySelector('div.visor-inferior')
 const visor_superior = document.querySelector('div.visor-superior')
+visor_inferior.innerHTML = "";
+visor_superior.innerHTML = "";
 
 let digito = null;
 function verif_tela(elemento){
@@ -34,7 +34,16 @@ function inserir(parametro){
             visor_inferior.innerHTML = digito
             break;
         case 'del':
-            verif_tela(digito)?window.alert('Não há número para apagar'):digito = digito.slice(0, -1);
+            if(verif_tela(digito) && visor_superior.innerHTML == ""){
+                window.alert('Não há número para apagar')
+            }
+            else if(visor_superior.innerHTML != ""){//caso alguem pense que o DEL tem a mesma função do C
+                visor_inferior.innerHTML = "";
+                visor_superior.innerHTML = "";
+            }
+            else{
+                digito = digito.slice(0, -1);
+            }
             visor_inferior.innerHTML = digito
             break
         case 'C':
